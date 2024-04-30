@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "iConstruct",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Your message about why you need this permission"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permissions.ACCESS_FINE_LOCATION",
+        "android.permissions.ACCESS_COARSE_LOCATION",
+        "android.permissions.HIGH_SAMPLING_RATE_SENSORS"
+      ],
+      "sensors": {
+        "accelerometer": true,
+        "gyroscope": true,
+        "magnetometer": true
+      },
+      "package": "com.praveensanj.myapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5674b174-1c90-47bb-b29d-3f000c7fa422"
+      }
+    }
+  }
+}
