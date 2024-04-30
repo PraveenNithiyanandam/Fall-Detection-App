@@ -35,7 +35,6 @@ const Signup = ({ navigation }) => {
     }
 
     try {
-      const API_KEY = 'AIzaSyCV8cYlQqq62RnKHOwHKrlCuF7Sp7h_4sw'; // Replace with your Firebase API key
       const response = await axios.post(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`, {
         email,
         password,
