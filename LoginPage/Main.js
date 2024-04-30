@@ -102,10 +102,10 @@ function Main({ navigation }) {
         return;
       }
 
-      const twilioAccountSid = 'ACda633e5a5fb0149ea66530cb8687f376';
-      const twilioAuthToken = '2801a9c63c93a74e9ccd0e658c0c2801';
-      const twilioPhoneNumber = '+16625534905';
-      const recipientPhoneNumber = '+919344551850';
+      const twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
+      const twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
+      const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
+      const recipientPhoneNumber = process.env.RECIPIENT_PHONE_NUMBER;
 
       const url = `https://api.twilio.com/2010-04-01/Accounts/${twilioAccountSid}/Messages`;
 
